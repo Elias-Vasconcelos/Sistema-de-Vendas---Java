@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="928.0" prefWidth="1297.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vendas.vendas.controller.TelaHomeController">
+   <top>
+      <ToolBar prefHeight="75.0" prefWidth="1336.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+         <items>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="65.0" prefWidth="383.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;" onMouseClicked="#abrirHome">
+               <children>
+                  <Label fx:id="BtnHome" contentDisplay="RIGHT" prefHeight="56.0" prefWidth="377.0" text="Sistema de Vendas " textFill="#fcfcfc">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <VBox prefHeight="853.0" prefWidth="974.0" style="-fx-background-color: #f5f7fa;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="165.0" prefWidth="1122.0">
+               <children>
+                  <HBox fx:id="BtnCliente" accessibleRole="BUTTON" onMouseClicked="#abrirCliente" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #3498db; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/do-utilizador.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="63.0" text="Clientes"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets left="125.0" right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnCategoria" accessibleRole="BUTTON" onMouseClicked="#abrirCategoria" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #9b59b6; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Categoria.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="97.0" text="Categoria"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnCidade" accessibleRole="BUTTON" onMouseClicked="#abrirCidade" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #2ecc71; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Cidade.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="63.0" text="Cidade"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnEstado" accessibleRole="BUTTON" onMouseClicked="#abrirEstado" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #27ae60; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Estado.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="63.0" text="Estado"><font><Font size="18.0" /></font></Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin><Insets left="10.0" right="10.0" top="50.0" /></VBox.margin>
+            </HBox>
+
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="168.0" prefWidth="1277.0">
+               <children>
+                  <HBox fx:id="BtnCliente1" accessibleRole="BUTTON" onMouseClicked="#abrirLoja" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #ff8c42; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Loja.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="63.0" text="Loja"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets left="125.0" right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnCategoria1" accessibleRole="BUTTON" onMouseClicked="#abrirPeriodo" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #ffd166; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/calendario.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="97.0" text="Periodo"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnCidade1" accessibleRole="BUTTON" onMouseClicked="#abrirProduto" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #2980b9; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Produto.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="79.0" text="Produto"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets right="150.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnEstado1" accessibleRole="BUTTON" onMouseClicked="#abrirVenda" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="145.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: red; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Venda.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="63.0" text="Venda"><font><Font size="18.0" /></font></Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin><Insets left="10.0" right="10.0" top="50.0" /></VBox.margin>
+            </HBox>
+
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="199.0" prefWidth="1134.0">
+               <children>
+                  <HBox fx:id="BtnCategoria2" accessibleRole="BUTTON" onMouseClicked="#abrirVendaProduto" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="194.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #81ecec; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Venda Produto.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="52.0" prefWidth="130.0" text="Venda Produto"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets left="375.0" right="145.0" /></HBox.margin>
+                  </HBox>
+                  <HBox fx:id="BtnCidade2" accessibleRole="BUTTON" onMouseClicked="#abrirVendedor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="145.0" prefWidth="194.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #e84393; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@Image/Vendedor.png" /></image>
+                        </ImageView>
+                        <Label prefHeight="31.0" prefWidth="86.0" text="Vendedor"><font><Font size="18.0" /></font></Label>
+                     </children>
+                     <HBox.margin><Insets right="150.0" /></HBox.margin>
+                  </HBox>
+               </children>
+               <padding><Insets left="10.0" right="10.0" top="50.0" /></padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

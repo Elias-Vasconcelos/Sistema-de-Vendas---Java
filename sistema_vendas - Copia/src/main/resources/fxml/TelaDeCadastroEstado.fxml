@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="928.0" prefWidth="1297.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vendas.vendas.controller.TelaDeCadastroEstadoController">
+   <top>
+      <ToolBar prefHeight="75.0" prefWidth="1336.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+         <items>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirHome" prefHeight="65.0" prefWidth="383.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <Label fx:id="BtnHome" contentDisplay="RIGHT" prefHeight="56.0" prefWidth="377.0" text="Sistema de Vendas " textFill="#fcfcfc">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </items></ToolBar>
+   </top>
+   <left>
+      <VBox prefHeight="758.0" prefWidth="175.0" style="-fx-background-color: #ecf0f1;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="BtnCliente" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirCliente" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/do-utilizador.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="63.0" text="Clientes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnCategoria" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirCategoria" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Categoria.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="97.0" text="Categoria">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnCidade" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirCidade" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Cidade.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="63.0" text="Cidade">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnEstado" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirEstado" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand; -fx-background-color: #f5f7fa;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Estado.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="63.0" text="Estado">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnLoja" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirLoja" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Loja.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="63.0" text="Loja">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnPeriodo" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirPeriodo" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/calendario.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="87.0" text="Periodo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnProduto" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirProduto" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Produto.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="94.0" text="Produto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="BtnVenda" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirVenda" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Venda.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="63.0" text="Venda">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="BtnVendaProduto" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirVendaProduto" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Venda%20Produto.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="123.0" text="VendaProduto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="BtnVendedor" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#abrirVendedor" prefHeight="32.0" prefWidth="175.0" style="-fx-alignment: center-left; -fx-spacing: 10; -fx-padding: 10 15; -fx-cursor: hand;">
+               <children>
+                  <ImageView fitHeight="229.0" fitWidth="29.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../java/com/vendas/vendas/images/Vendedor.png" />
+                     </image>
+                  </ImageView>
+                  <Label contentDisplay="RIGHT" prefHeight="27.0" prefWidth="88.0" text="Vendedor">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="853.0" prefWidth="974.0" style="-fx-background-color: #f5f7fa;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="71.0" prefWidth="199.0" text="Estado" textFill="#2c3e50">
+               <font>
+                  <Font size="39.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="195.0" prefWidth="929.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8; -fx-padding: 20;">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="367.0" text="Cadastro de Estado" textFill="#1978d7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="54.0" text="Nome">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TfNome" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="256.0" />
+                  <VBox prefHeight="47.0" prefWidth="973.0">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="973.0">
+                           <children>
+                              <Button fx:id="BtnCadastrar" mnemonicParsing="false" onAction="#cadastrar" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white;" text="Cadastrar">
+                                 <HBox.margin>
+                                    <Insets right="8.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="BtnAtualizar" mnemonicParsing="false" onAction="#atualizar" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: #f1c40f; -fx-text-fill: white;" text="Atualizar">
+                                 <HBox.margin>
+                                    <Insets right="8.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="BtnApagar" mnemonicParsing="false" onAction="#limparFormulario" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Apagar Formulario" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" width="0.0" />
+               </effect>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="177.0" prefWidth="929.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8; -fx-padding: 20;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="367.0" text="Deletar Estado" textFill="#1978d7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="101.0" text="Estado ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="TfIdDeletar" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="306.0" />
+                  <Button fx:id="BtnDeletar" mnemonicParsing="false" onAction="#deletar" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Deletar">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" width="0.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="929.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8; -fx-padding: 20;">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="367.0" text="Consutar Estado" textFill="#1978d7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TableView fx:id="tableView" prefHeight="183.0" prefWidth="905.0">
+                    <columns>
+                      <TableColumn fx:id="Colid" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="ColNome" prefWidth="75.0" text="Nome" />
+                    </columns>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" width="0.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="40.0" top="8.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
